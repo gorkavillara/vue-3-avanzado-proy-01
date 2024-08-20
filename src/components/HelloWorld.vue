@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { defineAsyncComponent, ref } from 'vue'
+// import LazyComponent from './LazyComponent.vue'
+const LazyComponent = defineAsyncComponent(() => import('./LazyComponent.vue'))
 
 defineProps<{ msg: string }>()
 
@@ -32,6 +34,7 @@ const count = ref(0)
     >.
   </p>
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+  <LazyComponent v-if="count > 1" />
 </template>
 
 <style scoped>
