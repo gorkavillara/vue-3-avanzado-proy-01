@@ -1,13 +1,12 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import PerformanceComponent from './components/PerformanceComponent.vue'
-import ImageComponent from './components/ImageComponent.vue'
-import ConnectionComponent from './components/ConnectionComponent.vue'
+<script setup>
+import Ejercicio01 from './components/Ejercicio01.vue'
+// import PerformanceComponent from './components/PerformanceComponent.vue'
+// import ImageComponent from './components/ImageComponent.vue'
+// import ConnectionComponent from './components/ConnectionComponent.vue'
 </script>
 
 <template>
-  <!-- <ImageComponent /> -->
-   <ConnectionComponent />
+   <Ejercicio01 />
 </template>
 
 <style scoped>

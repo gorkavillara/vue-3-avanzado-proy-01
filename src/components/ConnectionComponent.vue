@@ -2,7 +2,7 @@
   <img :src="imageSrc" alt="Descripción de la imagen" />
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref, onMounted } from "vue";
 
 const imageSrc = ref("");
